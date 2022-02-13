@@ -1,0 +1,114 @@
+$fyn:
+ layout: normal
+$pkg:
+ dev:
+  fynpo: ^1.1.33
+callsites:
+ _latest: 4.0.0
+ _:
+  ^3.0.0: 3.1.0
+ 3.1.0:
+  $: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
+  _: 'https://registry.npmjs.org/callsites/-/callsites-3.1.0.tgz'
+env-paths:
+ _latest: 3.0.0
+ _:
+  ^2.2.1: 2.2.1
+ 2.2.1:
+  $: sha512-+h1lkLKhZMTYjog1VEpJNG7NZJWcuc2DDk/qsqSTRRCOXiLjeQ1d1/udrUGhqMxUgAlwKNZ0cf2uqan5GLuS2A==
+  _: 'https://registry.npmjs.org/env-paths/-/env-paths-2.2.1.tgz'
+fyn:
+ _latest: 1.1.30
+ _:
+  ^1.1.30: 1.1.30
+ 1.1.30:
+  $: sha512-IAyYNpr8z+x7LhDTkBY69Fsly2vNfceoY68jCKsH9C/kHWqg+uGzwrNz9B04IlJyL2r2AiTkyZWNcTwivxqEJg==
+  _: 'https://registry.npmjs.org/fyn/-/fyn-1.1.30.tgz'
+fynpo:
+ _latest: 1.1.33
+ _:
+  ^1.1.33: 1.1.33
+ 1.1.33:
+  top: 1
+  $: sha512-bxh5kVvA0RQLoE9A8AO9NOfz5/OyEIP8/l7wGGts4U2SUl2YhnahZf8Eukx3uMIuBUYnn6Pbwf1CShQMmyMgIQ==
+  _: 'https://registry.npmjs.org/fynpo/-/fynpo-1.1.33.tgz'
+  dependencies:
+   env-paths: ^2.2.1
+   fyn: ^1.1.30
+   import-fresh: 3.3.0
+   mkdirp: ^1.0.4
+   resolve-global: 1.0.0
+   undici: ^4.14.1
+   xaa: ^1.7.2
+global-dirs:
+ _latest: 3.0.0
+ _:
+  ^0.1.1: 0.1.1
+ 0.1.1:
+  $: sha1-sxnA3UYH81PzvpzKTHL8FIxJ9EU=
+  _: 'https://registry.npmjs.org/global-dirs/-/global-dirs-0.1.1.tgz'
+  dependencies:
+   ini: ^1.3.4
+import-fresh:
+ _latest: 3.3.0
+ _:
+  3.3.0: 3.3.0
+ 3.3.0:
+  $: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==
+  _: 'https://registry.npmjs.org/import-fresh/-/import-fresh-3.3.0.tgz'
+  dependencies:
+   parent-module: ^1.0.0
+   resolve-from: ^4.0.0
+ini:
+ _latest: 2.0.0
+ _:
+  ^1.3.4: 1.3.8
+ 1.3.8:
+  $: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
+  _: 'https://registry.npmjs.org/ini/-/ini-1.3.8.tgz'
+mkdirp:
+ _latest: 1.0.4
+ _:
+  ^1.0.4: 1.0.4
+ 1.0.4:
+  $: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
+  _: 'https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz'
+parent-module:
+ _latest: 3.0.0
+ _:
+  ^1.0.0: 1.0.1
+ 1.0.1:
+  $: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==
+  _: 'https://registry.npmjs.org/parent-module/-/parent-module-1.0.1.tgz'
+  dependencies:
+   callsites: ^3.0.0
+resolve-from:
+ _latest: 5.0.0
+ _:
+  ^4.0.0: 4.0.0
+ 4.0.0:
+  $: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==
+  _: 'https://registry.npmjs.org/resolve-from/-/resolve-from-4.0.0.tgz'
+resolve-global:
+ _latest: 1.0.0
+ _:
+  1.0.0: 1.0.0
+ 1.0.0:
+  $: sha512-zFa12V4OLtT5XUX/Q4VLvTfBf+Ok0SPc1FNGM/z9ctUdiU618qwKpWnd0CHs3+RqROfyEg/DhuHbMWYqcgljEw==
+  _: 'https://registry.npmjs.org/resolve-global/-/resolve-global-1.0.0.tgz'
+  dependencies:
+   global-dirs: ^0.1.1
+undici:
+ _latest: 4.14.1
+ _:
+  ^4.14.1: 4.14.1
+ 4.14.1:
+  $: sha512-WJ+g+XqiZcATcBaUeluCajqy4pEDcQfK1vy+Fo+bC4/mqXI9IIQD/XWHLS70fkGUT6P52Drm7IFslO651OdLPQ==
+  _: 'https://registry.npmjs.org/undici/-/undici-4.14.1.tgz'
+xaa:
+ _latest: 1.7.3
+ _:
+  ^1.7.2: 1.7.3
+ 1.7.3:
+  $: sha512-GBA/59U8+INwVb1gfNQ5GEnV8lnBJj+9GUacvqeAWACbdl7v/73qgmdmo+rLkTp6rLU8xSEzFhWX+Akbj6Wh3A==
+  _: 'https://registry.npmjs.org/xaa/-/xaa-1.7.3.tgz'

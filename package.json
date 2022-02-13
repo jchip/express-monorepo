@@ -1,0 +1,33 @@
+{
+  "name": "express-monorepo",
+  "version": "1.0.0",
+  "description": "setup for development of express in a monorepo",
+  "main": "index.js",
+  "homepage": "https://github.com/jchip/express-monorepo",
+  "license": "ISC",
+  "scripts": {
+    "bootstrap": "npm run clone && fynpo",
+    "clone": "source init.sh && [ -d node_modules ] || npx fyn",
+    "test": "fynpo run test --stream --cache",
+    "nuke": "rm -rf */*/node_modules node_modules .fynpo */*/fyn-lock.yaml",
+    "nuke-all": "rm -rf expressjs jshttp packages pillarjs node_modules .fynpo"
+  },
+  "private": true,
+  "author": "Joel Chen",
+  "files": [
+    "src",
+    "lib",
+    "dist"
+  ],
+  "keywords": [
+    "express",
+    "monorepo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jchip/express-monorepo.git"
+  },
+  "devDependencies": {
+    "fynpo": "^1.1.33"
+  }
+}
