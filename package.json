@@ -1,14 +1,13 @@
 {
   "name": "express-monorepo",
   "version": "1.0.0",
-  "description": "setup for development of express in a monorepo",
+  "description": "setup for development of express 5 and its dependencies in a monorepo",
   "main": "index.js",
   "homepage": "https://github.com/jchip/express-monorepo",
   "license": "ISC",
   "scripts": {
-    "bootstrap": "npm run clone && fynpo",
-    "clone": "source init.sh && [ -d node_modules ] || npx fyn",
-    "test": "fynpo run test --stream --cache",
+    "bootstrap": "sh init.sh && fynpo bootstrap",
+    "test": "fynpo run test --stream",
     "nuke": "rm -rf */*/node_modules node_modules .fynpo */*/fyn-lock.yaml",
     "nuke-all": "rm -rf expressjs jshttp packages pillarjs node_modules .fynpo"
   },
@@ -28,6 +27,10 @@
     "url": "https://github.com/jchip/express-monorepo.git"
   },
   "devDependencies": {
-    "fynpo": "^1.1.33"
+    "fyn": "^3.0.0",
+    "fynpo": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }
