@@ -71,3 +71,13 @@ clone packages https://github.com/component/merge-descriptors.git
 clone packages https://github.com/dougwilson/nodejs-depd.git
 clone packages https://github.com/ljharb/qs.git
 clone packages https://github.com/tj/node-cookie-signature.git
+
+#
+# Local files the clones cannot commit.
+#
+# content-disposition and content-type run `prettier --check` in their test script.
+# It trips on the fyn-lock.yaml that fyn generates, so tell prettier to skip it.
+#
+for dir in jshttp/content-disposition jshttp/content-type; do
+  echo "fyn-lock.yaml" > "$dir/.prettierignore"
+done

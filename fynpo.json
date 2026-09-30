@@ -1,4 +1,10 @@
 {
+  "fyn": {
+    "options": {
+      "allowScripts": { "es5-ext": true, "esbuild": true },
+      "denyScripts": { "top-sites": {} }
+    }
+  },
   "packages": [
     "expressjs/*",
     "pillarjs/*",
