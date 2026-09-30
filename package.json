@@ -27,8 +27,8 @@
     "url": "https://github.com/jchip/express-monorepo.git"
   },
   "devDependencies": {
-    "fyn": "^3.0.0",
-    "fynpo": "^3.0.0"
+    "fyn": "^3.2.1",
+    "fynpo": "^3.2.1"
   },
   "engines": {
     "node": ">=22.12.0"
