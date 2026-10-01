@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ["22.22.2", "24.15", "26"]
+    name: node ${{ matrix.node }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - run: node --version
+      - name: Install fyn
+        run: |
+          # fyn is not npm, but npm ships with node and is the only way to bootstrap fyn
+          npm install -g fyn@3
+      - run: fyn install
+      # runs the bootstrap script, which clones the repos then runs fynpo bootstrap
+      - run: fyn run bootstrap
+      - run: fyn run test
