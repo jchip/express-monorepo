@@ -5,6 +5,7 @@
       "denyScripts": { "top-sites": {} }
     }
   },
+  "resolutions": { "supertest": "7.3.0" },
   "packages": [
     "expressjs/*",
     "pillarjs/*",
